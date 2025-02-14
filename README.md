@@ -17,29 +17,22 @@ This approach helps us:
 
 🗂 Dataset
 
-Source: Melbourne housing dataset (13,580 observations, 21 features).
-
-Key Variables: Price, BuildingArea, CouncilArea, Distance, Car, Bathroom, Bedroom2, Month.
-
-Preprocessing: Bayesian imputation for missing values, outlier removal (IQR filtering), standardization.
+- Source: Melbourne housing dataset (13,580 observations, 21 features).
+- Key Variables: Price, BuildingArea, CouncilArea, Distance, Car, Bathroom, Bedroom2, Month.
+- Preprocessing: Bayesian imputation for missing values, outlier removal (IQR filtering), standardization.
 
 🛠 Methodology
 
-Hierarchical Bayesian Modeling (PyMC)
-
-Mixed-Effects Model with spatial random slopes
-
-Conditional Autoregressive (CAR) Prior for spatial dependencies
-
-Inference using No-U-Turn Sampler (NUTS) for robust MCMC estimation
+- Hierarchical Bayesian Modeling (PyMC)
+- Mixed-Effects Model with spatial random slopes
+- Conditional Autoregressive (CAR) Prior for spatial dependencies
+- Inference using No-U-Turn Sampler (NUTS) for robust MCMC estimation
 
 📊 Key Findings
 
-The effect of Distance on price varies the most across council areas, confirming spatial heterogeneity.
-
-Bedroom count has a strong positive impact, but its influence fluctuates by location.
-
-The impact of building area remains relatively uniform, suggesting less spatial dependency.
+- The effect of Distance on price varies the most across council areas, confirming spatial heterogeneity.
+- Bedroom count has a strong positive impact, but its influence fluctuates by location.
+- The impact of building area remains relatively uniform, suggesting less spatial dependency.
 
 🚀 Technologies Used
 
