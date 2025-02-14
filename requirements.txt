@@ -1,0 +1,9 @@
+pymc
+arviz
+matplotlib
+numpy
+pandas
+seaborn
+scipy
+theano
+scikit-learn
